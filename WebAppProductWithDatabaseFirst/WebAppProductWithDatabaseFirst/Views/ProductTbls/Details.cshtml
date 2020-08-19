@@ -1,0 +1,43 @@
+﻿@model WebAppProductWithDatabaseFirst.ProductTbl
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ProductTbl</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookTbl.BookName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookTbl.BookName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

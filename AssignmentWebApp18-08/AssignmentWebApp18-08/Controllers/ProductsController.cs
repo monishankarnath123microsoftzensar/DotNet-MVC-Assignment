@@ -32,6 +32,7 @@ namespace AssignmentWebApp18_08.Controllers
                 return HttpNotFound();
 
             }
+            
             return View(proDetail);
         }
     }

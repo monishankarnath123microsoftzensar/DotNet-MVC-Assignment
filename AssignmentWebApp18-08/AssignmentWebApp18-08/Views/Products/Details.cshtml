@@ -10,21 +10,21 @@
 
         <tr>
             <td>Product Id</td>
-            <td></td>
+            <td>@Model.Id</td>
 
 
         </tr>
         <tr>
             <td>Product Name</td>
-            <td></td>
+            <td>@Model.PName</td>
 
 
         </tr>
         <tr>
             <td>Product Rate</td>
-            <td></td>
+            <td>@Model.PRate</td>
 
 
         </tr>
-    
+    <tr><td><button class="btn-info">@Html.ActionLink("Back","Index","Products")</button></td><td>@Html.ActionLink("Back", "Index", "Products",null,new { @class = "btn btn-success" })</td></tr>
 </table>
